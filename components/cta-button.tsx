@@ -44,7 +44,8 @@ export function CtaButton({
         ? { target: '_blank', rel: 'noopener noreferrer' }
         : {})}
       className={cn(
-        'inline-flex items-center justify-center gap-2 rounded-full font-bold transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-navy focus-visible:ring-offset-2',
+        'group inline-flex items-center justify-center gap-2 rounded-full font-bold transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1 hover:scale-[1.03] active:scale-[0.97] active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-navy focus-visible:ring-offset-2',
+        '[&_svg]:transition-all [&_svg]:duration-300 group-hover:[&_svg]:translate-x-1 group-hover:[&_svg]:scale-110',
         variants[variant],
         sizes[size],
         className,

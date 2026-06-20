@@ -1,6 +1,7 @@
 import { Baby, Backpack, Briefcase, type LucideIcon } from 'lucide-react'
 import { SectionHeading } from '@/components/brand'
 import { CtaButton } from '@/components/cta-button'
+import { ScrollReveal } from '@/components/scroll-reveal'
 
 const audiences: {
   icon: LucideIcon
@@ -36,38 +37,46 @@ export function AudiencePrograms() {
   return (
     <section className="bg-transparent">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
-        <SectionHeading eyebrow="Por edades" title="Cursos para cada etapa" />
+        <ScrollReveal animation="fade-up" delay={100}>
+          <SectionHeading eyebrow="Por edades" title="Cursos para {cada etapa}" />
+        </ScrollReveal>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {audiences.map(({ icon: Icon, title, text, mention, theme }) => (
-            <article
+          {audiences.map(({ icon: Icon, title, text, mention, theme }, idx) => (
+            <ScrollReveal
               key={title}
-              className="flex flex-col overflow-hidden rounded-3xl border-2 border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl"
+              animation="scale-up"
+              delay={idx * 150}
+              className="h-full"
             >
-              <div className={`flex items-center gap-3 p-6 ${theme}`}>
-                <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/20 ring-1 ring-white/30">
-                  <Icon className="h-6 w-6" strokeWidth={2.1} />
-                </span>
-                <h3 className="font-heading text-3xl">{title}</h3>
-              </div>
-              <div className="flex flex-1 flex-col p-6">
-                <p className="leading-relaxed text-muted-foreground">{text}</p>
-                <p className="mt-3 rounded-lg bg-brand-cream px-3 py-2 text-sm font-medium text-brand-navy">
-                  {mention}
-                </p>
-              </div>
-            </article>
+              <article
+                className="group flex h-full flex-col overflow-hidden rounded-3xl border-2 border-border bg-card shadow-sm transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl"
+              >
+                <div className={`flex items-center gap-3 p-6 ${theme}`}>
+                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/20 ring-1 ring-white/30 transition-transform duration-300 group-hover:scale-110">
+                    <Icon className="h-6 w-6" strokeWidth={2.1} />
+                  </span>
+                  <h3 className="font-heading text-3xl">{title}</h3>
+                </div>
+                <div className="flex flex-1 flex-col p-6">
+                  <p className="text-[15px] font-medium leading-relaxed text-slate-700">{text}</p>
+                  <p className="mt-3 rounded-lg bg-brand-cream px-3 py-2 text-[14px] font-semibold text-brand-navy">
+                    {mention}
+                  </p>
+                </div>
+              </article>
+            </ScrollReveal>
           ))}
         </div>
 
-        <div className="mt-10 text-center">
+        <ScrollReveal animation="fade-up" delay={400} className="mt-10 text-center">
           <CtaButton
             size="lg"
             message="Hola Big Master, quiero consultar el programa ideal para mí o para mi hijo/a."
           >
             Consultar programa ideal
           </CtaButton>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   )

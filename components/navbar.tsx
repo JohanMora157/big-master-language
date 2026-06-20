@@ -1,10 +1,11 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { Menu, X, MessageCircle } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { Logo } from '@/components/brand'
 import { CtaButton } from '@/components/cta-button'
 import { cn } from '@/lib/utils'
+import { WhatsAppIcon } from '@/components/whatsapp-icon'
 
 const LINKS = [
   { label: 'Inicio', href: '#inicio' },
@@ -54,7 +55,7 @@ export function Navbar() {
 
           <div className="hidden lg:block">
             <CtaButton message="Hola Big Master, quiero información sobre los cursos.">
-              <MessageCircle className="h-4 w-4" />
+              <WhatsAppIcon className="h-4 w-4" />
               Quiero información
             </CtaButton>
           </div>
@@ -89,7 +90,7 @@ export function Navbar() {
                   className="w-full"
                   message="Hola Big Master, quiero información sobre los cursos."
                 >
-                  <MessageCircle className="h-4 w-4" />
+                  <WhatsAppIcon className="h-4 w-4" />
                   Quiero información
                 </CtaButton>
               </li>

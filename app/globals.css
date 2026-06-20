@@ -184,6 +184,29 @@
   }
 }
 
+@keyframes float-slow {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -10px; }
+}
+@keyframes float-medium {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -15px; }
+}
+@keyframes float-fast {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -6px; }
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+.animate-float-medium {
+  animation: float-medium 4.5s ease-in-out infinite;
+}
+.animate-float-fast {
+  animation: float-fast 3s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

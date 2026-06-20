@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Plus } from 'lucide-react'
 import { SectionHeading } from '@/components/brand'
 import { cn } from '@/lib/utils'
+import { ScrollReveal } from '@/components/scroll-reveal'
 
 const faqs = [
   {
@@ -56,52 +57,59 @@ export function FAQ() {
         loading="lazy"
       />
       <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:py-20">
-        <SectionHeading eyebrow="Preguntas frecuentes" title="Resolvemos tus dudas" />
+        <ScrollReveal animation="fade-up" delay={100}>
+          <SectionHeading eyebrow="Preguntas frecuentes" title="Resolvemos tus {dudas}" />
+        </ScrollReveal>
 
         <ul className="mt-10 space-y-3">
           {faqs.map((item, i) => {
             const isOpen = open === i
             return (
-              <li
+              <ScrollReveal
                 key={item.q}
-                className={cn(
-                  'overflow-hidden rounded-2xl border-2 transition-colors',
-                  isOpen
-                    ? 'border-brand-red bg-brand-cream'
-                    : 'border-border bg-card',
-                )}
+                animation="fade-up"
+                delay={i * 75}
               >
-                <button
-                  type="button"
-                  onClick={() => setOpen(isOpen ? null : i)}
-                  className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
-                  aria-expanded={isOpen}
-                >
-                  <span className="font-semibold text-brand-navy">
-                    {item.q}
-                  </span>
-                  <Plus
-                    className={cn(
-                      'h-5 w-5 shrink-0 text-brand-red transition-transform duration-200',
-                      isOpen && 'rotate-45',
-                    )}
-                  />
-                </button>
-                <div
+                <li
                   className={cn(
-                    'grid transition-all duration-200',
+                    'overflow-hidden rounded-2xl border-2 transition-all duration-300',
                     isOpen
-                      ? 'grid-rows-[1fr] opacity-100'
-                      : 'grid-rows-[0fr] opacity-0',
+                      ? 'border-brand-red bg-brand-cream shadow-md'
+                      : 'border-border bg-card hover:border-brand-yellow',
                   )}
                 >
-                  <div className="overflow-hidden">
-                    <p className="px-5 pb-5 leading-relaxed text-muted-foreground">
-                      {item.a}
-                    </p>
+                  <button
+                    type="button"
+                    onClick={() => setOpen(isOpen ? null : i)}
+                    className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
+                    aria-expanded={isOpen}
+                  >
+                    <span className="font-bold text-[16px] sm:text-[17px] text-brand-navy">
+                      {item.q}
+                    </span>
+                    <Plus
+                      className={cn(
+                        'h-5 w-5 shrink-0 text-brand-red transition-transform duration-300',
+                        isOpen && 'rotate-45',
+                      )}
+                    />
+                  </button>
+                  <div
+                    className={cn(
+                      'grid transition-all duration-350 ease-in-out',
+                      isOpen
+                        ? 'grid-rows-[1fr] opacity-100'
+                        : 'grid-rows-[0fr] opacity-0',
+                    )}
+                  >
+                    <div className="overflow-hidden">
+                      <p className="px-5 pb-5 text-[15px] font-medium leading-relaxed text-slate-700">
+                        {item.a}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </li>
+                </li>
+              </ScrollReveal>
             )
           })}
         </ul>

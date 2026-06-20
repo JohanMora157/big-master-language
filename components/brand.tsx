@@ -24,7 +24,7 @@ export function Logo({
         className="rounded-xl ring-2 ring-brand-navy/10 shadow-sm"
         priority
       />
-      <span className="hidden sm:flex flex-col leading-none">
+      <span className="flex flex-col leading-none">
         <span className="font-heading text-lg text-brand-red tracking-wide">
           BIG MASTER
         </span>
@@ -129,6 +129,24 @@ export function SectionHeading({
   align?: 'center' | 'left'
   inverted?: boolean
 }) {
+  const renderTitle = () => {
+    const parts = title.split(/(\{.*?\})/g)
+    return parts.map((part, index) => {
+      if (part.startsWith('{') && part.endsWith('}')) {
+        const text = part.slice(1, -1)
+        return (
+          <span
+            key={index}
+            className={inverted ? 'text-brand-yellow' : 'text-brand-red'}
+          >
+            {text}
+          </span>
+        )
+      }
+      return part
+    })
+  }
+
   return (
     <div
       className={cn(
@@ -154,13 +172,13 @@ export function SectionHeading({
           inverted ? 'text-white' : 'text-brand-navy',
         )}
       >
-        {title}
+        {renderTitle()}
       </h2>
       {subtitle ? (
         <p
           className={cn(
-            'mt-4 text-base sm:text-lg leading-relaxed text-pretty',
-            inverted ? 'text-white/80' : 'text-muted-foreground',
+            'mt-4 text-base sm:text-lg leading-relaxed text-pretty font-medium',
+            inverted ? 'text-white/90' : 'text-slate-700 dark:text-slate-300',
           )}
         >
           {subtitle}

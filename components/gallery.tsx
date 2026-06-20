@@ -15,6 +15,7 @@ import { SectionHeading, InstagramIcon } from '@/components/brand'
 import { PlaceholderImage } from '@/components/placeholder-image'
 import { CtaButton } from '@/components/cta-button'
 import { SITE } from '@/lib/site'
+import { ScrollReveal } from '@/components/scroll-reveal'
 
 type Theme = 'yellow' | 'red' | 'navy' | 'cream'
 
@@ -104,32 +105,40 @@ export function Gallery() {
   return (
     <section className="bg-transparent">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
-        <SectionHeading
-          eyebrow="Galería"
-          title="Así se vive Big Master"
-          subtitle="Clases, actividades, promociones y experiencias para aprender idiomas de forma diferente."
-        />
+        <ScrollReveal animation="fade-up" delay={100}>
+          <SectionHeading
+            eyebrow="Galería"
+            title="Así se vive {Big Master}"
+            subtitle="Clases, actividades, promociones y experiencias para aprender idiomas de forma diferente."
+          />
+        </ScrollReveal>
 
         <div className="mt-10 grid auto-rows-[140px] grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
-          {items.map((item) => (
-            <PlaceholderImage
+          {items.map((item, idx) => (
+            <ScrollReveal
               key={item.label}
-              label={item.label}
-              icon={item.icon}
-              theme={item.theme}
-              tag={item.tag}
-              src={item.src}
+              animation="scale-up"
+              delay={idx * 75}
               className={`h-full ${item.span ?? ''}`}
-            />
+            >
+              <PlaceholderImage
+                label={item.label}
+                icon={item.icon}
+                theme={item.theme}
+                tag={item.tag}
+                src={item.src}
+                className="h-full w-full"
+              />
+            </ScrollReveal>
           ))}
         </div>
 
-        <div className="mt-10 text-center">
+        <ScrollReveal animation="fade-up" delay={400} className="mt-10 text-center">
           <CtaButton size="lg" variant="navy" href={SITE.instagramUrl}>
             <InstagramIcon className="h-5 w-5" />
             Síguenos en Instagram
           </CtaButton>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   )
