@@ -42,13 +42,13 @@ const labels = ['Speak', 'Listen', 'Write', 'Read', 'Practice']
 
 export function Methodology() {
   return (
-    <section id="metodologia" className="bg-brand-cream">
+    <section id="metodologia" className="bg-[#f0f4fa]">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
         <ScrollReveal animation="fade-up" delay={100}>
           <SectionHeading
             eyebrow="Metodología"
             title="Una metodología {práctica y divertida}"
-            subtitle="No se trata solo de memorizar. Se trata de usar el idioma."
+            subtitle="No se trata solo de memorizar gramática. Se trata de hablar y usar el idioma desde la primera clase."
           />
         </ScrollReveal>
 
@@ -60,7 +60,7 @@ export function Methodology() {
               delay={idx * 50}
             >
               <span
-                className="inline-block rounded-full border-2 border-brand-navy/15 bg-white px-3 py-1 text-xs font-extrabold uppercase tracking-wide text-brand-navy shadow-sm transition-all duration-300 hover:bg-brand-navy hover:text-white"
+                className="inline-block rounded-full border-2 border-[#054BAB]/15 bg-white px-3.5 py-1 text-xs font-extrabold uppercase tracking-wide text-[#054BAB] shadow-sm transition-all duration-300 hover:bg-[#ED0874] hover:text-white hover:border-[#ED0874]"
               >
                 {l}
               </span>
@@ -77,13 +77,13 @@ export function Methodology() {
               className="h-full"
             >
               <article
-                className="group h-full rounded-2xl border-2 border-brand-navy/10 bg-white p-6 transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-2 hover:scale-[1.03] hover:shadow-xl hover:border-brand-navy"
+                className="group flex h-full flex-col rounded-3xl border-2 border-brand-blue/15 bg-white p-6 shadow-md transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-2 hover:border-[#ED0874] hover:shadow-xl"
               >
-                <span className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-yellow text-brand-navy transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 group-hover:bg-brand-red group-hover:text-white shadow-sm">
-                  <Icon className="h-6 w-6" strokeWidth={2.1} />
+                <span className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ED0874] text-white shadow-md transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 group-hover:bg-[#FBCC2E] group-hover:text-[#054BAB]">
+                  <Icon className="h-6 w-6" strokeWidth={2.2} />
                 </span>
-                <h3 className="font-heading text-xl text-brand-navy">{title}</h3>
-                <p className="mt-2 text-[15px] font-medium leading-relaxed text-slate-700">
+                <h3 className="font-heading text-xl font-black text-[#054BAB]">{title}</h3>
+                <p className="mt-2 text-[15px] font-semibold leading-relaxed text-slate-700">
                   {text}
                 </p>
               </article>
@@ -100,14 +100,14 @@ export function Methodology() {
               delay={i * 150}
             >
               <li
-                className="group relative flex items-center gap-4 rounded-2xl bg-brand-navy p-5 text-white transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
+                className="group relative flex items-center gap-4 rounded-2xl bg-[#054BAB] p-5 text-white shadow-lg transition-all duration-300 hover:scale-[1.03] hover:shadow-xl"
               >
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-red font-heading text-lg transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#ED0874] font-heading text-lg font-black text-white shadow-md transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12">
                   {s.n}
                 </span>
-                <span className="font-bold text-[15px] leading-tight">{s.label}</span>
+                <span className="font-extrabold text-[15px] leading-tight text-white">{s.label}</span>
                 {i < steps.length - 1 ? (
-                  <span className="absolute -right-2 top-1/2 hidden h-3 w-3 -translate-y-1/2 rotate-45 border-r-2 border-t-2 border-brand-yellow lg:block" />
+                  <span className="absolute -right-2 top-1/2 hidden h-3 w-3 -translate-y-1/2 rotate-45 border-r-2 border-t-2 border-[#FBCC2E] lg:block" />
                 ) : null}
               </li>
             </ScrollReveal>

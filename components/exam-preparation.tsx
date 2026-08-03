@@ -16,26 +16,26 @@ const includes = [
 
 export function ExamPreparation() {
   return (
-    <section id="examenes" className="bg-brand-navy">
-      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
+    <section id="examenes" className="relative overflow-hidden bg-[#054BAB] text-white brand-texture py-16 sm:py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <ScrollReveal animation="fade-up" delay={100}>
           <SectionHeading
             inverted
-            eyebrow="Exámenes internacionales"
+            eyebrow="Exámenes Internacionales"
             title="Prepárate para {exámenes internacionales}"
-            subtitle="Entrena con acompañamiento para presentar tus pruebas con más seguridad."
+            subtitle="Entrena con acompañamiento especializado para presentar tus pruebas con la máxima seguridad y puntuación."
           />
         </ScrollReveal>
 
         <ScrollReveal animation="fade-up" delay={200}>
-          <p className="mx-auto mt-6 max-w-3xl text-center text-[16px] sm:text-[17px] font-medium leading-relaxed text-white/90">
+          <p className="mx-auto mt-6 max-w-3xl text-center text-base sm:text-lg font-semibold leading-relaxed text-white/95">
             Big Master ofrece preparación para exámenes internacionales de
             idiomas, con enfoque en habilidades, práctica, análisis de preguntas y
-            estrategias para mejorar tu desempeño.
+            estrategias efectivas para tu mejor desempeño.
           </p>
         </ScrollReveal>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {exams.map((exam, idx) => (
             <ScrollReveal
               key={exam}
@@ -44,16 +44,16 @@ export function ExamPreparation() {
               className="h-full"
             >
               <article
-                className="group h-full rounded-2xl bg-brand-yellow p-5 text-brand-navy shadow-lg transition-transform duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-2 hover:scale-[1.03] hover:shadow-xl"
+                className="group flex h-full flex-col rounded-3xl border-2 border-white/20 bg-[#163A96] p-6 shadow-xl transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-2 hover:border-[#ED0874] hover:shadow-2xl"
               >
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-brand-navy text-brand-yellow transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-sm">
-                  <Award className="h-5 w-5" />
+                <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#ED0874] text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-md">
+                  <Award className="h-6 w-6" />
                 </span>
-                <h3 className="mt-3 font-heading text-2xl leading-tight">
+                <h3 className="mt-4 font-heading text-2xl font-black text-white">
                   {exam}
                 </h3>
-                <p className="mt-1 text-[15px] font-semibold text-brand-navy/80">
-                  Preparación enfocada en resultados.
+                <p className="mt-2 text-[14px] font-medium text-white/85">
+                  Preparación enfocada en tus objetivos.
                 </p>
               </article>
             </ScrollReveal>
@@ -61,9 +61,9 @@ export function ExamPreparation() {
         </div>
 
         <ScrollReveal animation="fade-up" delay={300}>
-          <div className="mx-auto mt-10 max-w-3xl rounded-2xl border-2 border-white/10 bg-white/5 p-6">
-            <h3 className="font-heading text-lg text-brand-yellow">
-              Cada preparación incluye
+          <div className="mx-auto mt-10 max-w-3xl rounded-3xl border-2 border-white/20 bg-[#163A96] p-7 shadow-xl">
+            <h3 className="font-heading text-xl font-black text-[#FBCC2E]">
+              Cada preparación incluye:
             </h3>
             <ul className="mt-4 grid gap-3 sm:grid-cols-2">
               {includes.map((item, idx) => (
@@ -73,10 +73,10 @@ export function ExamPreparation() {
                   delay={idx * 75}
                 >
                   <li
-                    className="flex items-start gap-2 text-[15px] font-medium text-white/90"
+                    className="flex items-start gap-2.5 text-[15px] font-semibold text-white/95"
                   >
-                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-red text-white shadow-sm">
-                      <Check className="h-3 w-3" strokeWidth={3} />
+                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#ED0874] text-white shadow-sm">
+                      <Check className="h-3.5 w-3.5" strokeWidth={3} />
                     </span>
                     {item}
                   </li>
@@ -89,7 +89,7 @@ export function ExamPreparation() {
         <ScrollReveal animation="scale-up" delay={400} className="mt-9 text-center">
           <CtaButton
             size="lg"
-            variant="yellow"
+            variant="pink"
             message="Hola Big Master, quiero prepararme para un examen internacional (IELTS / TOEFL / PET)."
           >
             <WhatsAppIcon className="h-5 w-5" />

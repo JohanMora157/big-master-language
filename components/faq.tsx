@@ -53,7 +53,7 @@ export function FAQ() {
       <img
         src="/images/big-ben-clock.png"
         alt="Big Ben Watermark"
-        className="pointer-events-none absolute -left-16 bottom-0 hidden h-[95%] w-auto object-contain opacity-[0.15] mix-blend-multiply md:block"
+        className="pointer-events-none absolute -left-6 top-1/2 -translate-y-1/2 hidden h-[82%] sm:h-[86%] w-auto object-contain opacity-[0.12] mix-blend-multiply [mask-image:linear-gradient(to_bottom,transparent_0%,black_12%,black_88%,transparent_100%)] md:block"
         loading="lazy"
       />
       <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:py-20">

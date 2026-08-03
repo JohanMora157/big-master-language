@@ -45,7 +45,7 @@ export function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="rounded-full px-3 py-2 text-sm font-semibold text-brand-navy transition-colors hover:bg-brand-yellow"
+                  className="rounded-full px-3.5 py-2 text-sm font-bold text-brand-blue-dark transition-all duration-200 hover:bg-brand-pink hover:text-white"
                 >
                   {link.label}
                 </a>
@@ -54,7 +54,10 @@ export function Navbar() {
           </ul>
 
           <div className="hidden lg:block">
-            <CtaButton message="Hola Big Master, quiero información sobre los cursos.">
+            <CtaButton
+              variant="pink"
+              message="Hola Big Master, quiero información sobre los cursos de inglés."
+            >
               <WhatsAppIcon className="h-4 w-4" />
               Quiero información
             </CtaButton>
@@ -63,7 +66,7 @@ export function Navbar() {
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            className="inline-flex items-center justify-center rounded-lg p-2 text-brand-navy hover:bg-brand-yellow lg:hidden"
+            className="inline-flex items-center justify-center rounded-lg p-2 text-brand-blue-dark hover:bg-brand-pink hover:text-white transition-colors lg:hidden"
             aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
             aria-expanded={open}
           >
@@ -72,14 +75,14 @@ export function Navbar() {
         </nav>
 
         {open ? (
-          <div className="border-t border-brand-navy/10 bg-white lg:hidden">
+          <div className="border-t border-brand-blue/10 bg-white lg:hidden">
             <ul className="mx-auto flex max-w-6xl flex-col px-4 py-2 sm:px-6">
               {LINKS.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className="block rounded-lg px-3 py-3 text-base font-semibold text-brand-navy hover:bg-brand-yellow"
+                    className="block rounded-lg px-3 py-3 text-base font-bold text-brand-blue-dark hover:bg-brand-pink hover:text-white"
                   >
                     {link.label}
                   </a>
@@ -87,8 +90,9 @@ export function Navbar() {
               ))}
               <li className="px-1 py-3">
                 <CtaButton
+                  variant="pink"
                   className="w-full"
-                  message="Hola Big Master, quiero información sobre los cursos."
+                  message="Hola Big Master, quiero información sobre los cursos de inglés."
                 >
                   <WhatsAppIcon className="h-4 w-4" />
                   Quiero información

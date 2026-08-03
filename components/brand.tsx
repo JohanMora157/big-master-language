@@ -90,23 +90,25 @@ export function FacebookIcon({ className }: { className?: string }) {
 
 export function Sticker({
   children,
-  variant = 'red',
+  variant = 'pink',
   className,
 }: {
   children: ReactNode
-  variant?: 'red' | 'yellow' | 'navy' | 'cream'
+  variant?: 'pink' | 'red' | 'yellow' | 'navy' | 'blue' | 'cream'
   className?: string
 }) {
   const styles = {
-    red: 'bg-brand-red text-white',
-    yellow: 'bg-brand-yellow text-brand-navy',
-    navy: 'bg-brand-navy text-white',
-    cream: 'bg-brand-cream text-brand-navy',
+    pink: 'bg-brand-pink text-white shadow-brand-pink/20',
+    red: 'bg-brand-pink text-white',
+    yellow: 'bg-brand-yellow text-brand-blue-dark font-extrabold',
+    navy: 'bg-brand-blue-dark text-white',
+    blue: 'bg-brand-blue text-white',
+    cream: 'bg-brand-gray text-brand-blue-dark font-semibold',
   }
   return (
     <span
       className={cn(
-        'inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wide shadow-sm',
+        'inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-extrabold uppercase tracking-wide shadow-sm',
         styles[variant],
         className,
       )}
@@ -137,7 +139,7 @@ export function SectionHeading({
         return (
           <span
             key={index}
-            className={inverted ? 'text-brand-yellow' : 'text-brand-red'}
+            className={inverted ? 'text-brand-yellow' : 'text-brand-pink'}
           >
             {text}
           </span>
@@ -157,10 +159,10 @@ export function SectionHeading({
       {eyebrow ? (
         <span
           className={cn(
-            'inline-block mb-3 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.18em]',
+            'inline-block mb-3 rounded-full px-3.5 py-1 text-xs font-extrabold uppercase tracking-[0.18em]',
             inverted
-              ? 'bg-brand-yellow text-brand-navy'
-              : 'bg-brand-red/10 text-brand-red',
+              ? 'bg-brand-pink text-white'
+              : 'bg-brand-pink/10 text-brand-pink ring-1 ring-brand-pink/20',
           )}
         >
           {eyebrow}
@@ -168,8 +170,8 @@ export function SectionHeading({
       ) : null}
       <h2
         className={cn(
-          'font-heading text-3xl sm:text-4xl md:text-5xl leading-[1.05] text-balance',
-          inverted ? 'text-white' : 'text-brand-navy',
+          'font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold leading-[1.08] text-balance',
+          inverted ? 'text-white' : 'text-brand-blue-dark',
         )}
       >
         {renderTitle()}
@@ -178,7 +180,7 @@ export function SectionHeading({
         <p
           className={cn(
             'mt-4 text-base sm:text-lg leading-relaxed text-pretty font-medium',
-            inverted ? 'text-white/90' : 'text-slate-700 dark:text-slate-300',
+            inverted ? 'text-white/90' : 'text-slate-600',
           )}
         >
           {subtitle}

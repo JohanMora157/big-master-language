@@ -10,37 +10,37 @@ export function About() {
       <img
         src="/images/big-ben-clock.png"
         alt="Big Ben Tower"
-        className="pointer-events-none absolute -left-10 bottom-0 hidden h-[90%] w-auto object-contain opacity-[0.15] mix-blend-multiply md:block"
+        className="pointer-events-none absolute -left-6 top-1/2 -translate-y-1/2 hidden h-[82%] sm:h-[86%] w-auto object-contain opacity-[0.12] mix-blend-multiply [mask-image:linear-gradient(to_bottom,transparent_0%,black_12%,black_88%,transparent_100%)] md:block"
         loading="lazy"
       />
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-20">
         <div>
           <ScrollReveal animation="fade-up" delay={100}>
-            <span className="inline-block rounded-full bg-brand-red/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-brand-red">
+            <span className="inline-block rounded-full bg-[#ED0874]/10 px-3.5 py-1 text-xs font-extrabold uppercase tracking-[0.18em] text-[#ED0874]">
               Quiénes somos
             </span>
           </ScrollReveal>
           
           <ScrollReveal animation="fade-up" delay={200}>
-            <h2 className="mt-3 font-heading text-3xl leading-[1.05] text-brand-navy text-balance sm:text-4xl md:text-5xl">
+            <h2 className="mt-3 font-heading text-3xl font-black leading-[1.05] text-[#054BAB] text-balance sm:text-4xl md:text-5xl">
               Big Master Language Center
             </h2>
           </ScrollReveal>
           
           <ScrollReveal animation="fade-up" delay={300}>
-            <p className="mt-3 text-lg font-semibold text-brand-red">
+            <p className="mt-3 text-lg font-bold text-[#ED0874]">
               Aprendizaje de idiomas con innovación, personalización y diversión.
             </p>
           </ScrollReveal>
           
           <ScrollReveal animation="fade-up" delay={400}>
-            <p className="mt-4 leading-relaxed text-muted-foreground">
+            <p className="mt-4 leading-relaxed text-slate-700 font-medium">
               Big Master Language Center es una academia de idiomas en Bogotá que
               ayuda a estudiantes de diferentes edades a aprender inglés y otros
               idiomas de una forma práctica, dinámica y cercana.
             </p>
-            <p className="mt-3 leading-relaxed text-muted-foreground">
-              Nuestro enfoque combina clases personalizadas, clases grupales,
+            <p className="mt-3 leading-relaxed text-slate-700 font-medium">
+              Nuestro enfoque combina clases personalizadas 100% online desde $10.000 la hora, clases grupales,
               preparación para exámenes internacionales y experiencias educativas
               diferentes, como actividades de conversación y stand-up comedy en
               inglés.
@@ -48,9 +48,9 @@ export function About() {
           </ScrollReveal>
 
           <ScrollReveal animation="fade-up" delay={500}>
-            <div className="mt-6 rounded-2xl border-2 border-brand-yellow bg-brand-cream p-5 shadow-sm transition-transform duration-300 hover:scale-[1.01]">
-              <Quote className="h-6 w-6 text-brand-red animate-pulse" />
-              <p className="mt-2 font-heading text-xl leading-snug text-brand-navy text-balance">
+            <div className="mt-6 rounded-2xl border-2 border-[#ED0874] bg-[#f0f4fa] p-5 shadow-sm transition-transform duration-300 hover:scale-[1.01]">
+              <Quote className="h-6 w-6 text-[#ED0874] animate-pulse" />
+              <p className="mt-2 font-heading text-xl font-bold leading-snug text-[#054BAB] text-balance">
                 ¡Ven, estudia y aprende con Big Master Language Center!
               </p>
             </div>

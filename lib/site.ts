@@ -6,7 +6,7 @@ export const SITE = {
   instagram: '@bigmasterlanguagecenter',
   instagramUrl: 'https://instagram.com/bigmasterlanguagecenter',
   facebook: 'BIG Master Language Center',
-  facebookUrl: 'https://facebook.com/',
+  facebookUrl: 'https://facebook.com/bigmasterlanguagecenter',
   website: 'bigmaster.com.co',
   websiteUrl: 'https://bigmaster.com.co',
   city: 'Bogotá, Colombia',

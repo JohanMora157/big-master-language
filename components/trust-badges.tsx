@@ -17,28 +17,28 @@ const badges: { icon: LucideIcon; title: string; text: string }[] = [
   {
     icon: BarChart3,
     title: 'Todos los niveles',
-    text: 'Desde principiantes hasta estudiantes avanzados.',
+    text: 'Desde principiantes hasta nivel avanzado.',
   },
   {
     icon: Laptop,
     title: 'Presencial y virtual',
-    text: 'Aprende desde Bogotá o desde casa.',
+    text: 'Aprende en Bogotá o 100% online.',
   },
   {
     icon: Globe,
-    title: 'Preparación internacional',
-    text: 'IELTS, TOEFL, PET y otros exámenes.',
+    title: 'Exámenes globales',
+    text: 'IELTS, TOEFL, PET y certificaciones.',
   },
   {
     icon: Tag,
     title: 'Clases accesibles',
-    text: 'Pregunta por promociones desde $9.000.',
+    text: 'Clases personalizadas desde $10.000 / hr.',
   },
 ]
 
 export function TrustBadges() {
   return (
-    <section className="bg-brand-navy">
+    <section className="bg-[#054BAB] text-white border-y border-white/10">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
         <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-5">
           {badges.map(({ icon: Icon, title, text }, idx) => (
@@ -48,14 +48,14 @@ export function TrustBadges() {
               delay={idx * 100}
               className="h-full"
             >
-              <div className="group h-full rounded-2xl border-2 border-white/10 bg-white/5 p-4 transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-2 hover:scale-[1.03] hover:border-brand-yellow hover:shadow-lg hover:shadow-brand-yellow/10">
-                <span className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-brand-yellow text-brand-navy transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
+              <div className="group h-full rounded-2xl border-2 border-white/20 bg-[#163A96] p-4.5 shadow-md transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5 hover:border-[#ED0874] hover:shadow-xl">
+                <span className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#ED0874] text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 shadow-md">
                   <Icon className="h-5 w-5" strokeWidth={2.2} />
                 </span>
-                <h3 className="font-heading text-base leading-tight text-white">
+                <h3 className="font-heading text-base font-black leading-tight text-white">
                   {title}
                 </h3>
-                <p className="mt-1 text-sm leading-snug text-white/70">{text}</p>
+                <p className="mt-1 text-xs font-medium leading-snug text-white/85">{text}</p>
               </div>
             </ScrollReveal>
           ))}

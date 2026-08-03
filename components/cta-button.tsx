@@ -2,27 +2,28 @@ import type { ReactNode } from 'react'
 import { cn } from '@/lib/utils'
 import { whatsappLink } from '@/lib/site'
 
-type Variant = 'red' | 'navy' | 'yellow' | 'outline' | 'white'
+type Variant = 'pink' | 'red' | 'navy' | 'yellow' | 'outline' | 'white'
 
 const variants: Record<Variant, string> = {
-  red: 'bg-brand-red text-white hover:bg-[#a50d26] shadow-md shadow-brand-red/20',
-  navy: 'bg-brand-navy text-white hover:bg-[#1b3654]',
-  yellow: 'bg-brand-yellow text-brand-navy hover:bg-[#ffbf00]',
-  white: 'bg-white text-brand-navy hover:bg-brand-cream',
+  pink: 'bg-brand-pink text-white hover:bg-brand-pink-hover shadow-lg shadow-brand-pink/35 ring-2 ring-brand-pink/30',
+  red: 'bg-brand-pink text-white hover:bg-brand-pink-hover shadow-lg shadow-brand-pink/30',
+  navy: 'bg-brand-blue-dark text-white hover:bg-brand-blue shadow-md',
+  yellow: 'bg-brand-yellow text-brand-blue-dark hover:bg-[#e6b800] shadow-md font-extrabold',
+  white: 'bg-white text-brand-blue hover:bg-brand-gray shadow-md font-extrabold',
   outline:
-    'border-2 border-brand-navy text-brand-navy bg-transparent hover:bg-brand-navy hover:text-white',
+    'border-2 border-white/80 text-white bg-transparent hover:bg-white hover:text-brand-blue font-bold',
 }
 
 const sizes = {
   md: 'px-5 py-2.5 text-sm',
-  lg: 'px-6 py-3.5 text-base',
+  lg: 'px-6 py-3.5 text-base sm:text-lg',
 } as const
 
 export function CtaButton({
   children,
   href,
   message,
-  variant = 'red',
+  variant = 'pink',
   size = 'md',
   className,
 }: {
