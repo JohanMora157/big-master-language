@@ -1,6 +1,5 @@
 import { Navbar } from '@/components/navbar'
 import { Hero } from '@/components/hero'
-import { TrustBadges } from '@/components/trust-badges'
 import { About } from '@/components/about'
 import { Courses } from '@/components/courses'
 import { Methodology } from '@/components/methodology'
@@ -8,7 +7,6 @@ import { ExamPreparation } from '@/components/exam-preparation'
 import { AudiencePrograms } from '@/components/audience-programs'
 import { Promotions } from '@/components/promotions'
 import { Experiences } from '@/components/experiences'
-import { WhyChooseUs } from '@/components/why-choose-us'
 import { StudentGoals } from '@/components/student-goals'
 import { Location } from '@/components/location'
 import { FAQ } from '@/components/faq'
@@ -33,16 +31,14 @@ export default function Page() {
         </div>
 
         <Hero />
-        <TrustBadges />
         <About />
         <Courses />
         <AudiencePrograms />
         <Methodology />
         <ExamPreparation />
-        <Promotions />
         <Experiences />
         <StudentGoals />
-        <WhyChooseUs />
+        <Promotions />
         <Location />
         <FAQ />
         <FinalCTA />
