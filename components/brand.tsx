@@ -139,7 +139,7 @@ export function SectionHeading({
         return (
           <span
             key={index}
-            className={inverted ? 'text-brand-yellow' : 'text-brand-pink'}
+            className={inverted ? 'text-brand-yellow font-black' : 'text-brand-pink font-black'}
           >
             {text}
           </span>
@@ -152,14 +152,14 @@ export function SectionHeading({
   return (
     <div
       className={cn(
-        'max-w-2xl',
+        'max-w-3xl',
         align === 'center' ? 'mx-auto text-center' : 'text-left',
       )}
     >
       {eyebrow ? (
         <span
           className={cn(
-            'inline-block mb-3 rounded-full px-3.5 py-1 text-xs font-extrabold uppercase tracking-[0.18em]',
+            'inline-block mb-3.5 rounded-full px-4 py-1.5 text-xs font-black uppercase tracking-[0.2em] shadow-sm',
             inverted
               ? 'bg-brand-pink text-white'
               : 'bg-brand-pink/10 text-brand-pink ring-1 ring-brand-pink/20',
@@ -170,7 +170,7 @@ export function SectionHeading({
       ) : null}
       <h2
         className={cn(
-          'font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold leading-[1.08] text-balance',
+          'font-heading text-3xl sm:text-4xl lg:text-5xl font-black leading-[1.06] text-balance tracking-tight',
           inverted ? 'text-white' : 'text-brand-blue-dark',
         )}
       >
@@ -179,7 +179,7 @@ export function SectionHeading({
       {subtitle ? (
         <p
           className={cn(
-            'mt-4 text-base sm:text-lg leading-relaxed text-pretty font-medium',
+            'mt-4 text-base sm:text-lg lg:text-xl leading-relaxed text-pretty font-semibold',
             inverted ? 'text-white/90' : 'text-slate-600',
           )}
         >

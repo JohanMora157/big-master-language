@@ -52,7 +52,7 @@ export function TrustBadges() {
                 <span className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#ED0874] text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 shadow-md">
                   <Icon className="h-5 w-5" strokeWidth={2.2} />
                 </span>
-                <h3 className="font-heading text-base font-black leading-tight text-white">
+                <h3 className="font-sans text-base font-extrabold leading-snug text-white tracking-tight">
                   {title}
                 </h3>
                 <p className="mt-1 text-xs font-medium leading-snug text-white/85">{text}</p>
