@@ -11,11 +11,11 @@ import { CtaButton } from '@/components/cta-button'
 import { ScrollReveal } from '@/components/scroll-reveal'
 
 const englishFeatures = [
-  'Conversación',
-  'Pronunciación',
+  'Speaking y listening',
+  'Reading y writing',
+  'Pronunciación y vocabulario',
   'Gramática aplicada',
-  'Vocabulario real',
-  'Preparación académica y laboral',
+  'Situaciones académicas, laborales y cotidianas',
 ]
 
 const secondary: {
@@ -58,8 +58,8 @@ export function Courses() {
         <ScrollReveal animation="fade-up" delay={100}>
           <SectionHeading
             eyebrow="Nuestros Cursos"
-            title="Cursos de idiomas a {tu propio ritmo}"
-            subtitle="Aprende inglés y otros idiomas con lecciones personalizadas adaptadas a tus objetivos personales y profesionales."
+            title="Encuentra el {programa que necesitas}"
+            subtitle="Ofrecemos formación en diferentes idiomas y modalidades, de acuerdo con la disponibilidad de nuestros programas y profesores."
           />
         </ScrollReveal>
 
@@ -75,7 +75,7 @@ export function Courses() {
               </span>
               <h3 className="mt-1 font-heading text-4xl font-extrabold text-white">Inglés</h3>
               <p className="mt-3 max-w-md text-[16px] sm:text-[17px] font-medium leading-relaxed text-white/90">
-                Mejora tu speaking, listening, reading y writing con clases dinámicas individuales o grupales desde $10.000 la hora.
+                Desarrolla tus habilidades de speaking, listening, reading y writing mediante clases orientadas a la comunicación y al uso práctico del idioma. Encuentra clases individuales personalizadas, programas grupales y opciones presenciales en Bogotá, de acuerdo con el programa disponible.
               </p>
               <ul className="mt-5 grid gap-2 sm:grid-cols-2">
                 {englishFeatures.map((f) => (
@@ -93,7 +93,7 @@ export function Courses() {
                   size="lg"
                   message="Hola Big Master, quiero aprender inglés. ¿Me das información de los cursos de inglés?"
                 >
-                  Quiero aprender inglés
+                  Quiero información sobre los cursos
                   <ArrowRight className="h-4 w-4" />
                 </CtaButton>
               </div>

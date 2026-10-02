@@ -4,14 +4,14 @@ import { CtaButton } from '@/components/cta-button'
 import { ScrollReveal } from '@/components/scroll-reveal'
 import { WhatsAppIcon } from '@/components/whatsapp-icon'
 
-const exams = ['IELTS', 'TOEFL', 'PET', 'Otros exámenes internacionales']
+const exams = ['IELTS', 'TOEFL', 'PET', 'FCE']
 
 const includes = [
-  'Diagnóstico de nivel',
-  'Práctica guiada',
-  'Simulacros o ejercicios tipo examen',
-  'Estrategias de lectura, escucha, escritura y conversación',
-  'Refuerzo de puntos débiles',
+  'Diagnóstico inicial',
+  'Ejercicios tipo examen y simulacros',
+  'Análisis de preguntas',
+  'Estrategias para cada parte de la prueba',
+  'Refuerzo de reading, listening, writing y speaking',
 ]
 
 export function ExamPreparation() {
@@ -22,16 +22,15 @@ export function ExamPreparation() {
           <SectionHeading
             inverted
             eyebrow="Exámenes Internacionales"
-            title="Prepárate para {exámenes internacionales}"
-            subtitle="Entrena con acompañamiento especializado para presentar tus pruebas con la máxima seguridad y puntuación."
+            title="Prepárate para tu examen con {orientación personalizada}"
+            subtitle="Ofrecemos preparación para diferentes exámenes internacionales, de acuerdo con los programas disponibles."
           />
         </ScrollReveal>
 
         <ScrollReveal animation="fade-up" delay={200}>
           <p className="mx-auto mt-6 max-w-3xl text-center text-base sm:text-lg font-semibold leading-relaxed text-white/95">
-            Big Master ofrece preparación para exámenes internacionales de
-            idiomas, con enfoque en habilidades, práctica, análisis de preguntas y
-            estrategias efectivas para tu mejor desempeño.
+            El proceso puede adaptarse al examen que vas a presentar y a las
+            habilidades que necesitas fortalecer.
           </p>
         </ScrollReveal>
 
@@ -53,7 +52,7 @@ export function ExamPreparation() {
                   {exam}
                 </h3>
                 <p className="mt-2 text-[14px] font-medium text-white/85">
-                  Preparación enfocada en tus objetivos.
+                  Preparación de acuerdo con la disponibilidad del programa.
                 </p>
               </article>
             </ScrollReveal>

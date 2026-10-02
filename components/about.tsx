@@ -23,27 +23,30 @@ export function About() {
           
           <ScrollReveal animation="fade-up" delay={200}>
             <h2 className="mt-3 font-heading text-3xl font-black leading-[1.05] text-[#054BAB] text-balance sm:text-4xl md:text-5xl">
-              Big Master Language Center
+              Conoce Big Master Language Center
             </h2>
           </ScrollReveal>
           
           <ScrollReveal animation="fade-up" delay={300}>
             <p className="mt-3 text-lg font-bold text-[#ED0874]">
-              Aprendizaje de idiomas con innovación, personalización y diversión.
+              Experiencias de aprendizaje prácticas, personalizadas y cercanas.
             </p>
           </ScrollReveal>
           
           <ScrollReveal animation="fade-up" delay={400}>
             <p className="mt-4 leading-relaxed text-slate-700 font-medium">
-              Big Master Language Center es una academia de idiomas en Bogotá que
-              ayuda a estudiantes de diferentes edades a aprender inglés y otros
-              idiomas de una forma práctica, dinámica y cercana.
+              Big Master Language Center es un centro de idiomas enfocado en ofrecer
+              experiencias de aprendizaje prácticas, personalizadas y cercanas.
             </p>
             <p className="mt-3 leading-relaxed text-slate-700 font-medium">
-              Nuestro enfoque combina clases personalizadas 100% online desde $10.000 la hora, clases grupales,
-              preparación para exámenes internacionales y experiencias educativas
-              diferentes, como actividades de conversación y stand-up comedy en
-              inglés.
+              Trabajamos para que nuestros estudiantes desarrollen habilidades que
+              puedan utilizar en situaciones reales de comunicación, ya sea para sus
+              estudios, trabajo, viajes, entrevistas, exámenes o proyectos personales.
+            </p>
+            <p className="mt-3 leading-relaxed text-slate-700 font-medium">
+              Contamos con alternativas para niños, jóvenes y adultos, incluyendo
+              clases individuales, programas grupales, preparación para exámenes y
+              actividades complementarias para practicar el idioma en diferentes contextos.
             </p>
           </ScrollReveal>
 
@@ -51,7 +54,7 @@ export function About() {
             <div className="mt-6 rounded-2xl border-2 border-[#ED0874] bg-[#f0f4fa] p-5 shadow-sm transition-transform duration-300 hover:scale-[1.01]">
               <Quote className="h-6 w-6 text-[#ED0874] animate-pulse" />
               <p className="mt-2 font-heading text-xl font-bold leading-snug text-[#054BAB] text-balance">
-                ¡Ven, estudia y aprende con Big Master Language Center!
+                Acompañamos a cada estudiante de acuerdo con su nivel, sus necesidades y los objetivos que quiere alcanzar.
               </p>
             </div>
           </ScrollReveal>

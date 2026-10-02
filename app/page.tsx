@@ -12,7 +12,6 @@ import { Location } from '@/components/location'
 import { FAQ } from '@/components/faq'
 import { FinalCTA } from '@/components/final-cta'
 import { Footer } from '@/components/footer'
-import { FloatingWhatsApp } from '@/components/floating-whatsapp'
 
 export default function Page() {
   return (
@@ -44,7 +43,6 @@ export default function Page() {
         <FinalCTA />
       </main>
       <Footer />
-      <FloatingWhatsApp />
     </>
   )
 }

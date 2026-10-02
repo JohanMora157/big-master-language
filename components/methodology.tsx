@@ -11,23 +11,23 @@ import { ScrollReveal } from '@/components/scroll-reveal'
 const cards: { icon: LucideIcon; title: string; text: string }[] = [
   {
     icon: Target,
-    title: 'Personalización',
-    text: 'Lecciones adaptadas 1 a 1 según tus metas, ritmo y nivel actual.',
+    title: 'Diagnóstico inicial',
+    text: 'Identificamos tu nivel y los aspectos que necesitas fortalecer.',
   },
   {
     icon: Activity,
-    title: 'Práctica real',
-    text: 'Diálogos activos y conversación real desde el primer día.',
+    title: 'Plan personalizado',
+    text: 'Definimos un plan de aprendizaje acorde con tus necesidades y objetivos.',
   },
   {
     icon: Gamepad2,
-    title: 'Aprendizaje dinámico',
-    text: 'Recursos interactivos y experiencias para aprender con motivación.',
+    title: 'Práctica del idioma',
+    text: 'Trabajamos las habilidades mediante conversación, ejercicios, actividades y recursos prácticos.',
   },
   {
     icon: LineChart,
     title: 'Seguimiento',
-    text: 'Evaluación de avances continuos con retroalimentación clara.',
+    text: 'Identificamos avances y reforzamos los aspectos que necesitan mayor atención.',
   },
 ]
 
@@ -46,9 +46,9 @@ export function Methodology() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <ScrollReveal animation="fade-up" delay={100}>
           <SectionHeading
-            eyebrow="Metodología Práctica"
-            title="Metodología 100% {interactiva y efectiva}"
-            subtitle="Nos enfocamos en el uso real del idioma. Habla inglés con fluidez y seguridad desde tu primera lección."
+            eyebrow="Metodología"
+            title="Aprende {utilizando el idioma}"
+            subtitle="Nuestro proceso parte de las necesidades y objetivos de cada estudiante para desarrollar herramientas que pueda utilizar en situaciones reales."
           />
         </ScrollReveal>
 

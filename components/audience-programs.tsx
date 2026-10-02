@@ -13,22 +13,22 @@ const audiences: {
   {
     icon: Baby,
     title: 'Niños',
-    text: 'Clases dinámicas, visuales y participativas para que los más pequeños se acerquen al inglés de forma natural.',
-    mention: 'Programas para pequeños de casa, según disponibilidad.',
+    text: 'Creamos espacios de aprendizaje dinámicos y participativos, con actividades y recursos adecuados para la edad de cada estudiante.',
+    mention: 'Actividades y programas vacacionales cuando se encuentran disponibles.',
     theme: 'bg-[#FBCC2E] text-[#054BAB]',
   },
   {
     icon: Backpack,
     title: 'Jóvenes',
-    text: 'Refuerzo escolar, conversación, pronunciación, vocabulario y preparación para el futuro académico.',
-    mention: 'También aplica para vacaciones bilingües y cursos intensivos.',
+    text: 'Programas enfocados en refuerzo académico, vocabulario, pronunciación, conversación y futuras necesidades académicas.',
+    mention: 'Programas intensivos y actividades vacacionales según la oferta disponible.',
     theme: 'bg-[#ED0874] text-white',
   },
   {
     icon: Briefcase,
     title: 'Adultos',
-    text: 'Inglés para trabajo, viajes, estudio, entrevistas, exámenes o crecimiento personal.',
-    mention: 'Modalidad 100% online o presencial.',
+    text: 'Aprende un idioma de acuerdo con tus objetivos personales y profesionales: trabajo, entrevistas, estudios, viajes o exámenes.',
+    mention: 'Fortalece las habilidades de comunicación que necesitas.',
     theme: 'bg-[#054BAB] text-white',
   },
 ]
@@ -38,7 +38,7 @@ export function AudiencePrograms() {
     <section className="bg-transparent">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
         <ScrollReveal animation="fade-up" delay={100}>
-          <SectionHeading eyebrow="Por edades" title="Cursos para {cada etapa}" />
+          <SectionHeading eyebrow="Niños, jóvenes y adultos" title="Programas adaptados a {cada etapa}" />
         </ScrollReveal>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">

@@ -14,10 +14,10 @@ import { ScrollReveal } from '@/components/scroll-reveal'
 import { WhatsAppIcon } from '@/components/whatsapp-icon'
 
 const heroHighlights = [
-  'Aprende a tu propio ritmo con lecciones 1 a 1',
-  'Horarios adaptados a tu trabajo o estudio',
-  'Enfoque 100% conversacional desde la primera clase',
-  'Profesores con amplia experiencia pedagógica',
+  'Clases adaptadas a tu nivel y objetivos',
+  'Opciones para niños, jóvenes y adultos',
+  'Modalidades individuales y grupales',
+  'Opciones virtuales y presenciales en Bogotá',
 ]
 
 const floatingWords = [
@@ -57,15 +57,15 @@ export function Hero() {
           <ScrollReveal animation="fade-up" delay={100}>
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-black uppercase tracking-[0.18em] text-[#FBCC2E] backdrop-blur-md ring-1 ring-white/20 shadow-md">
               <MapPin className="h-3.5 w-3.5 animate-pulse text-[#ED0874]" />
-              Academia de Idiomas · Bogotá &amp; Online
+              Centro de idiomas · Bogotá y online
             </span>
           </ScrollReveal>
 
           <ScrollReveal animation="fade-up" delay={200}>
             <h1 className="mt-4 font-heading text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] text-white text-balance tracking-tight">
-              Aprende inglés con clases personalizadas y{' '}
+              Aprende idiomas de forma{' '}
               <span className="inline-block text-[#FBCC2E] font-black">
-                100% online
+                práctica y personalizada
               </span>
             </h1>
           </ScrollReveal>
@@ -81,7 +81,7 @@ export function Hero() {
                     Tarifa promocional desde
                   </span>
                   <span className="rounded-full bg-[#ED0874] px-2.5 py-0.5 text-[10px] sm:text-[11px] font-black uppercase text-white shadow-sm">
-                    ¡La más económica!
+                    100% online
                   </span>
                 </div>
                 <div className="text-xl sm:text-2xl font-black text-[#FBCC2E] leading-tight mt-0.5">
@@ -93,7 +93,10 @@ export function Hero() {
 
           <ScrollReveal animation="fade-up" delay={300}>
             <p className="mt-5 max-w-xl text-base sm:text-lg lg:text-xl leading-relaxed text-white/95 text-pretty font-semibold">
-              Desarrolla tu fluidez de forma práctica. Diseñamos un plan de estudio a tu medida con profesores calificados y horarios totalmente adaptables.
+              En Big Master Language Center te ayudamos a desarrollar tus habilidades en idiomas a través de clases adaptadas a tu nivel, objetivos y necesidades.
+            </p>
+            <p className="mt-3 max-w-xl text-sm sm:text-base leading-relaxed text-white/85 text-pretty font-medium">
+              Encuentra opciones para niños, jóvenes y adultos, con clases individuales, grupales y programas especiales. Nuestra oferta incluye modalidades virtuales y presenciales en Bogotá, según el programa y la disponibilidad.
             </p>
           </ScrollReveal>
 
@@ -123,8 +126,12 @@ export function Hero() {
                 <WhatsAppIcon className="h-5 w-5" />
                 Quiero información por WhatsApp
               </CtaButton>
-              <CtaButton size="lg" variant="outline" href="#promociones">
-                Ver promociones
+              <CtaButton
+                size="lg"
+                variant="outline"
+                message="Hola Big Master, quiero conocer los cursos disponibles."
+              >
+                Conocer nuestros cursos
               </CtaButton>
             </div>
           </ScrollReveal>

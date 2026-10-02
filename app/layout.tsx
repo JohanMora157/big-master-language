@@ -23,9 +23,9 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://bigmaster.com.co'),
-  title: 'Big Master Language Center | Cursos de inglés en Bogotá y 100% Online',
+  title: 'Big Master Language Center | Cursos de idiomas en Bogotá y online',
   description:
-    'Aprende inglés en Bogotá y online con Big Master Language Center. Clases personalizadas desde $10.000 la hora. Cursos para niños, jóvenes y adultos, presenciales y virtuales.',
+    'Aprende idiomas de forma práctica y personalizada con Big Master Language Center. Programas para niños, jóvenes y adultos, con opciones virtuales y presenciales en Bogotá.',
   keywords: [
     'cursos de inglés Bogotá',
     'clases personalizadas online',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     'Big Master Language Center',
   ],
   openGraph: {
-    title: 'Big Master Language Center | Cursos de inglés en Bogotá y Online',
+    title: 'Big Master Language Center | Cursos de idiomas en Bogotá y online',
     description:
       'Clases personalizadas 100% online desde $10.000 la hora. Cursos de inglés y otros idiomas para todas las edades.',
     locale: 'es_CO',

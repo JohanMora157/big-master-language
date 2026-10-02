@@ -30,7 +30,7 @@ export function FinalCTA() {
       <div className="relative z-10 mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 lg:py-24">
         <ScrollReveal animation="fade-up" delay={100}>
           <div className="flex flex-wrap justify-center gap-2">
-            <Sticker variant="pink">Cupos limitados</Sticker>
+            <Sticker variant="pink">Programas para todas las edades</Sticker>
             <Sticker variant="yellow">Desde $10.000 / hr</Sticker>
             <Sticker variant="pink">100% Online &amp; Presencial</Sticker>
           </div>
@@ -56,7 +56,7 @@ export function FinalCTA() {
               message="Hola Big Master, quiero información por WhatsApp para empezar mi curso de inglés."
             >
               <WhatsAppIcon className="h-5 w-5" />
-              Quiero información por WhatsApp
+              Hablar con un asesor
             </CtaButton>
             <CtaButton size="lg" variant="outline" href="#cursos">
               Ver todos los cursos

@@ -8,40 +8,36 @@ import { ScrollReveal } from '@/components/scroll-reveal'
 
 const faqs = [
   {
-    q: '¿Qué idiomas enseñan?',
-    a: 'El enfoque principal es inglés, pero también puedes preguntar por francés, alemán y otros idiomas disponibles.',
+    q: '¿Qué idiomas ofrece Big Master?',
+    a: 'Ofrecemos principalmente formación en inglés y también contamos con francés, alemán, portugués, español y otros idiomas de acuerdo con la disponibilidad de profesores y programas.',
   },
   {
-    q: '¿Las clases son presenciales o virtuales?',
-    a: 'Big Master ofrece opciones presenciales en Bogotá y clases virtuales, según disponibilidad de horarios y programas.',
+    q: '¿Las clases son virtuales o presenciales?',
+    a: 'Contamos con clases virtuales y opciones presenciales en Bogotá. La modalidad disponible depende del programa que el estudiante elija.',
   },
   {
-    q: '¿Tienen cursos para niños?',
-    a: 'Sí. Hay opciones para niños, jóvenes y adultos. También puedes preguntar por programas de vacaciones bilingües.',
+    q: '¿La promoción de $10.000 aplica para todas las clases?',
+    a: 'No. La tarifa promocional desde $10.000 COP por hora corresponde a clases individuales y personalizadas 100% online y aplican ciertos términos y condiciones. Las clases grupales y presenciales corresponden a modalidades y programas diferentes.',
   },
   {
     q: '¿Puedo empezar desde cero?',
-    a: 'Sí. Los cursos están pensados para diferentes edades y niveles, desde principiantes hasta estudiantes que quieren reforzar o avanzar.',
+    a: 'Sí. Los contenidos y el proceso de aprendizaje pueden adaptarse al nivel del estudiante, incluyendo personas que están comenzando a estudiar el idioma.',
+  },
+  {
+    q: '¿Tienen clases para niños y jóvenes?',
+    a: 'Sí. Contamos con programas dirigidos a niños, jóvenes y adultos, con contenidos y actividades adaptados a las necesidades de cada grupo.',
   },
   {
     q: '¿Preparan para exámenes internacionales?',
-    a: 'Sí. Big Master ofrece preparación para IELTS, TOEFL, PET y otros exámenes internacionales.',
+    a: 'Sí. Contamos con preparación para diferentes exámenes, entre ellos IELTS, TOEFL, PET y FCE, de acuerdo con la disponibilidad del programa.',
   },
   {
-    q: '¿Cuánto cuestan las clases?',
-    a: 'Hay promociones desde $9.000, pero los precios pueden variar según modalidad, horario y disponibilidad. Lo mejor es confirmar por WhatsApp.',
+    q: '¿Cómo puedo conocer los horarios disponibles?',
+    a: 'Puedes comunicarte con nosotros por WhatsApp para consultar los horarios disponibles según tu nivel, objetivo y modalidad de clase.',
   },
   {
-    q: '¿Las clases son individuales o grupales?',
-    a: 'Puedes preguntar por clases personalizadas y grupales, según tu objetivo y disponibilidad.',
-  },
-  {
-    q: '¿Cómo me inscribo?',
-    a: 'Escríbenos por WhatsApp al 315 2430707 y te orientamos con cursos, horarios y promociones activas.',
-  },
-  {
-    q: '¿Tienen actividades diferentes a clases tradicionales?',
-    a: 'Sí. Big Master ha trabajado experiencias como stand-up comedy, talleres, conversación y actividades para practicar el idioma de forma divertida.',
+    q: '¿Qué actividades adicionales realizan?',
+    a: 'Realizamos diferentes experiencias y actividades de práctica, como English Stand-Up Comedy, actividades de conversación y talleres relacionados con pronunciación, lectura, vocabulario, música y cultura, según nuestra programación.',
   },
 ]
 

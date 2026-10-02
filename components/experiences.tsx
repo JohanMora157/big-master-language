@@ -14,22 +14,22 @@ const cards: { icon: LucideIcon; title: string; text: string }[] = [
   {
     icon: Mic,
     title: 'Stand-up comedy',
-    text: 'Eventos para practicar escucha, vocabulario, humor y comprensión en inglés de una forma totalmente diferente.',
+    text: 'Una experiencia para interactuar con el inglés a través del humor, la escucha y el vocabulario.',
   },
   {
     icon: MessagesSquare,
     title: 'Conversation activities',
-    text: 'Espacios dinámicos e interactivos para practicar speaking, pronunciación y ganar confianza.',
+    text: 'Espacios para practicar conversación real, pronunciación y comunicación en diferentes contextos.',
   },
   {
     icon: Sun,
     title: 'Bilingual vacations',
-    text: 'Programas de vacaciones bilingües para niños y jóvenes con actividades educativas y recreativas.',
+    text: 'Programas y actividades bilingües y vacacionales de acuerdo con la programación disponible.',
   },
   {
     icon: Presentation,
     title: 'Workshops',
-    text: 'Talleres prácticos de lectura, pronunciación, vocabulario, música, cultura y conversación real.',
+    text: 'Talleres de pronunciación, lectura, vocabulario, música y cultura.',
   },
 ]
 
@@ -45,17 +45,16 @@ export function Experiences() {
         <ScrollReveal animation="fade-up" delay={100}>
           <SectionHeading
             inverted
-            eyebrow="Experiencias & Eventos"
-            title="Aprende inglés también con {experiencias}"
-            subtitle="El idioma se aprende mejor cuando se usa en contextos reales, inmersivos y divertidos."
+            eyebrow="Experiencias"
+            title="Aprende el idioma también {fuera de la clase}"
+            subtitle="Desarrollamos actividades que permiten utilizar el inglés en contextos diferentes y de una manera más dinámica."
           />
         </ScrollReveal>
 
         <ScrollReveal animation="fade-up" delay={200}>
           <p className="mx-auto mt-6 max-w-3xl text-center text-base sm:text-lg font-semibold leading-relaxed text-white/95">
-            Big Master ha creado experiencias diferentes como stand-up comedy en
-            inglés y español, actividades de conversación y espacios donde
-            estudiantes y profesores aprenden mientras se divierten.
+            Las experiencias complementan el proceso de aprendizaje y ofrecen
+            oportunidades para practicar, participar y disfrutar el idioma.
           </p>
         </ScrollReveal>
 
