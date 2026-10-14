@@ -20,9 +20,6 @@ export function Footer() {
             <div className="rounded-2xl bg-white p-3 inline-block shadow-md">
               <Logo />
             </div>
-            <p className="mt-4 max-w-md text-sm leading-relaxed text-white/80 font-medium">
-              Academia de idiomas en Bogotá con cursos de inglés y otros idiomas para niños, jóvenes y adultos. Clases personalizadas 100% online desde $10.000 la hora, preparación de exámenes y más.
-            </p>
             <div className="mt-5 flex gap-3">
               <a
                 href={SITE.instagramUrl}

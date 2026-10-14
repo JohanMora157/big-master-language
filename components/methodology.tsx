@@ -48,7 +48,7 @@ export function Methodology() {
           <SectionHeading
             eyebrow="Metodología"
             title="Aprende {utilizando el idioma}"
-            subtitle="Nuestro proceso parte de las necesidades y objetivos de cada estudiante para desarrollar herramientas que pueda utilizar en situaciones reales."
+            subtitle="Trabajamos las habilidades comunicativas mediante actividades prácticas y un proceso de aprendizaje organizado en 4 etapas."
           />
         </ScrollReveal>
 

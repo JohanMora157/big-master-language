@@ -9,35 +9,31 @@ import { ScrollReveal } from '@/components/scroll-reveal'
 const faqs = [
   {
     q: '¿Qué idiomas ofrece Big Master?',
-    a: 'Ofrecemos principalmente formación en inglés y también contamos con francés, alemán, portugués, español y otros idiomas de acuerdo con la disponibilidad de profesores y programas.',
+    a: 'Ofrecemos principalmente formación en inglés, y contamos con opciones en otros idiomas como francés y alemán según disponibilidad.',
   },
   {
     q: '¿Las clases son virtuales o presenciales?',
-    a: 'Contamos con clases virtuales y opciones presenciales en Bogotá. La modalidad disponible depende del programa que el estudiante elija.',
+    a: 'Contamos con opciones 100% online y clases presenciales en Bogotá, según el programa que elijas.',
   },
   {
     q: '¿La promoción de $10.000 aplica para todas las clases?',
-    a: 'No. La tarifa promocional desde $10.000 COP por hora corresponde a clases individuales y personalizadas 100% online y aplican ciertos términos y condiciones. Las clases grupales y presenciales corresponden a modalidades y programas diferentes.',
+    a: 'La tarifa promocional desde $10.000 COP por hora corresponde a clases individuales y personalizadas 100% online. Las clases grupales y presenciales corresponden a modalidades diferentes.',
   },
   {
     q: '¿Puedo empezar desde cero?',
-    a: 'Sí. Los contenidos y el proceso de aprendizaje pueden adaptarse al nivel del estudiante, incluyendo personas que están comenzando a estudiar el idioma.',
+    a: 'Sí. Los contenidos y el ritmo de aprendizaje se adaptan a tu nivel, ideales si estás comenzando desde las bases.',
   },
   {
     q: '¿Tienen clases para niños y jóvenes?',
-    a: 'Sí. Contamos con programas dirigidos a niños, jóvenes y adultos, con contenidos y actividades adaptados a las necesidades de cada grupo.',
+    a: 'Sí. Disponemos de programas especializados para niños, jóvenes y adultos con actividades acordes a cada etapa.',
   },
   {
     q: '¿Preparan para exámenes internacionales?',
-    a: 'Sí. Contamos con preparación para diferentes exámenes, entre ellos IELTS, TOEFL, PET y FCE, de acuerdo con la disponibilidad del programa.',
+    a: 'Sí. Ofrecemos preparación para exámenes como IELTS, TOEFL, PET y FCE, sujeta a la disponibilidad del programa.',
   },
   {
     q: '¿Cómo puedo conocer los horarios disponibles?',
-    a: 'Puedes comunicarte con nosotros por WhatsApp para consultar los horarios disponibles según tu nivel, objetivo y modalidad de clase.',
-  },
-  {
-    q: '¿Qué actividades adicionales realizan?',
-    a: 'Realizamos diferentes experiencias y actividades de práctica, como English Stand-Up Comedy, actividades de conversación y talleres relacionados con pronunciación, lectura, vocabulario, música y cultura, según nuestra programación.',
+    a: 'Escríbenos por WhatsApp y nuestro equipo te orientará con los horarios disponibles de acuerdo con tu objetivo y modalidad.',
   },
 ]
 
@@ -45,7 +41,7 @@ export function FAQ() {
   const [open, setOpen] = useState<number | null>(0)
 
   return (
-    <section className="relative overflow-hidden bg-transparent">
+    <section id="faq" className="relative overflow-hidden bg-transparent">
       <img
         src="/images/big-ben-clock.png"
         alt="Big Ben Watermark"
@@ -70,8 +66,8 @@ export function FAQ() {
                   className={cn(
                     'overflow-hidden rounded-2xl border-2 transition-all duration-300',
                     isOpen
-                      ? 'border-brand-red bg-brand-cream shadow-md'
-                      : 'border-border bg-card hover:border-brand-yellow',
+                      ? 'border-[#ED0874] bg-[#fff] shadow-md'
+                      : 'border-slate-200 bg-white hover:border-[#FBCC2E]',
                   )}
                 >
                   <button
@@ -80,12 +76,12 @@ export function FAQ() {
                     className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
                     aria-expanded={isOpen}
                   >
-                    <span className="font-bold text-[16px] sm:text-[17px] text-brand-navy">
+                    <span className="font-bold text-[16px] sm:text-[17px] text-[#054BAB]">
                       {item.q}
                     </span>
                     <Plus
                       className={cn(
-                        'h-5 w-5 shrink-0 text-brand-red transition-transform duration-300',
+                        'h-5 w-5 shrink-0 text-[#ED0874] transition-transform duration-300',
                         isOpen && 'rotate-45',
                       )}
                     />

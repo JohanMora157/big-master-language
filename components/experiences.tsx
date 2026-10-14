@@ -47,15 +47,8 @@ export function Experiences() {
             inverted
             eyebrow="Experiencias"
             title="Aprende el idioma también {fuera de la clase}"
-            subtitle="Desarrollamos actividades que permiten utilizar el inglés en contextos diferentes y de una manera más dinámica."
+            subtitle="Participa en actividades que te permiten practicar inglés en contextos diferentes, interactuar con otras personas y explorar nuevas formas de acercarte al idioma."
           />
-        </ScrollReveal>
-
-        <ScrollReveal animation="fade-up" delay={200}>
-          <p className="mx-auto mt-6 max-w-3xl text-center text-base sm:text-lg font-semibold leading-relaxed text-white/95">
-            Las experiencias complementan el proceso de aprendizaje y ofrecen
-            oportunidades para practicar, participar y disfrutar el idioma.
-          </p>
         </ScrollReveal>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

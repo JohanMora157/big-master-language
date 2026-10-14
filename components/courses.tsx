@@ -11,11 +11,10 @@ import { CtaButton } from '@/components/cta-button'
 import { ScrollReveal } from '@/components/scroll-reveal'
 
 const englishFeatures = [
-  'Speaking y listening',
-  'Reading y writing',
+  'Conversación y comunicación práctica',
   'Pronunciación y vocabulario',
   'Gramática aplicada',
-  'Situaciones académicas, laborales y cotidianas',
+  'Inglés para situaciones académicas, laborales y cotidiana',
 ]
 
 const secondary: {
@@ -77,7 +76,7 @@ export function Courses() {
               <p className="mt-3 max-w-md text-[16px] sm:text-[17px] font-medium leading-relaxed text-white/90">
                 Desarrolla tus habilidades de speaking, listening, reading y writing mediante clases orientadas a la comunicación y al uso práctico del idioma. Encuentra clases individuales personalizadas, programas grupales y opciones presenciales en Bogotá, de acuerdo con el programa disponible.
               </p>
-              <ul className="mt-5 grid gap-2 sm:grid-cols-2">
+              <ul className="mt-5 grid gap-2.5 sm:grid-cols-1">
                 {englishFeatures.map((f) => (
                   <li key={f} className="flex items-center gap-2 text-[15px] font-semibold text-white">
                     <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#ED0874] shadow-sm transition-transform duration-300 group-hover:scale-110">

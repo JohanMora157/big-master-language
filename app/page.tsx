@@ -10,7 +10,6 @@ import { Experiences } from '@/components/experiences'
 import { StudentGoals } from '@/components/student-goals'
 import { Location } from '@/components/location'
 import { FAQ } from '@/components/faq'
-import { FinalCTA } from '@/components/final-cta'
 import { Footer } from '@/components/footer'
 
 export default function Page() {
@@ -40,7 +39,6 @@ export default function Page() {
         <Promotions />
         <Location />
         <FAQ />
-        <FinalCTA />
       </main>
       <Footer />
     </>

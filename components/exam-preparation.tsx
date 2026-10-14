@@ -1,4 +1,4 @@
-import { Check, Award } from 'lucide-react'
+import { Check, Award, Info } from 'lucide-react'
 import { SectionHeading } from '@/components/brand'
 import { CtaButton } from '@/components/cta-button'
 import { ScrollReveal } from '@/components/scroll-reveal'
@@ -23,15 +23,8 @@ export function ExamPreparation() {
             inverted
             eyebrow="Exámenes Internacionales"
             title="Prepárate para tu examen con {orientación personalizada}"
-            subtitle="Ofrecemos preparación para diferentes exámenes internacionales, de acuerdo con los programas disponibles."
+            subtitle="Te ayudamos a prepararte para el examen internacional que deseas presentar, mediante práctica, ejercicios similares a la prueba y estrategias adaptadas a sus características."
           />
-        </ScrollReveal>
-
-        <ScrollReveal animation="fade-up" delay={200}>
-          <p className="mx-auto mt-6 max-w-3xl text-center text-base sm:text-lg font-semibold leading-relaxed text-white/95">
-            El proceso puede adaptarse al examen que vas a presentar y a las
-            habilidades que necesitas fortalecer.
-          </p>
         </ScrollReveal>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -43,24 +36,29 @@ export function ExamPreparation() {
               className="h-full"
             >
               <article
-                className="group flex h-full flex-col rounded-3xl border-2 border-white/20 bg-[#163A96] p-6 shadow-xl transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-2 hover:border-[#ED0874] hover:shadow-2xl"
+                className="group flex h-full flex-col items-center text-center justify-center rounded-3xl border-2 border-white/20 bg-[#163A96] p-6 py-8 shadow-xl transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-2 hover:border-[#ED0874] hover:shadow-2xl"
               >
-                <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#ED0874] text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-md">
+                <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#ED0874] text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 shadow-md">
                   <Award className="h-6 w-6" />
                 </span>
                 <h3 className="mt-4 font-heading text-2xl font-black text-white">
                   {exam}
                 </h3>
-                <p className="mt-2 text-[14px] font-medium text-white/85">
-                  Preparación de acuerdo con la disponibilidad del programa.
-                </p>
               </article>
             </ScrollReveal>
           ))}
         </div>
 
+        {/* Warning / availability notice right above the checklist box */}
+        <ScrollReveal animation="fade-up" delay={250}>
+          <div className="mx-auto mt-8 max-w-3xl flex items-center justify-center gap-2.5 rounded-2xl border border-[#FBCC2E]/40 bg-[#FBCC2E]/10 px-5 py-3 text-center text-sm font-semibold text-[#FBCC2E]">
+            <Info className="h-4 w-4 shrink-0 text-[#FBCC2E]" />
+            <span>Nota: La preparación de cada examen está sujeta a la disponibilidad del programa.</span>
+          </div>
+        </ScrollReveal>
+
         <ScrollReveal animation="fade-up" delay={300}>
-          <div className="mx-auto mt-10 max-w-3xl rounded-3xl border-2 border-white/20 bg-[#163A96] p-7 shadow-xl">
+          <div className="mx-auto mt-4 max-w-3xl rounded-3xl border-2 border-white/20 bg-[#163A96] p-7 shadow-xl">
             <h3 className="font-heading text-xl font-black text-[#FBCC2E]">
               Cada preparación incluye:
             </h3>

@@ -1,5 +1,4 @@
 import {
-  Check,
   MapPin,
   Mic,
   Headphones,
@@ -12,13 +11,6 @@ import { PlaceholderImage } from '@/components/placeholder-image'
 import { Users, GraduationCap, Laptop } from 'lucide-react'
 import { ScrollReveal } from '@/components/scroll-reveal'
 import { WhatsAppIcon } from '@/components/whatsapp-icon'
-
-const heroHighlights = [
-  'Clases adaptadas a tu nivel y objetivos',
-  'Opciones para niños, jóvenes y adultos',
-  'Modalidades individuales y grupales',
-  'Opciones virtuales y presenciales en Bogotá',
-]
 
 const floatingWords = [
   { text: 'Speak English!', className: 'top-4 left-2 rotate-[-4deg]' },
@@ -95,28 +87,9 @@ export function Hero() {
             <p className="mt-5 max-w-xl text-base sm:text-lg lg:text-xl leading-relaxed text-white/95 text-pretty font-semibold">
               En Big Master Language Center te ayudamos a desarrollar tus habilidades en idiomas a través de clases adaptadas a tu nivel, objetivos y necesidades.
             </p>
-            <p className="mt-3 max-w-xl text-sm sm:text-base leading-relaxed text-white/85 text-pretty font-medium">
-              Encuentra opciones para niños, jóvenes y adultos, con clases individuales, grupales y programas especiales. Nuestra oferta incluye modalidades virtuales y presenciales en Bogotá, según el programa y la disponibilidad.
-            </p>
           </ScrollReveal>
 
           <ScrollReveal animation="fade-up" delay={400}>
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-              {heroHighlights.map((h) => (
-                <li
-                  key={h}
-                  className="flex items-start gap-2.5 text-sm sm:text-base font-semibold text-white/95"
-                >
-                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#ED0874] text-white shadow-md">
-                    <Check className="h-3.5 w-3.5" strokeWidth={3} />
-                  </span>
-                  {h}
-                </li>
-              ))}
-            </ul>
-          </ScrollReveal>
-
-          <ScrollReveal animation="fade-up" delay={500}>
             <div className="mt-8 flex flex-col gap-3.5 sm:flex-row sm:flex-wrap">
               <CtaButton
                 size="lg"
@@ -136,7 +109,7 @@ export function Hero() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal animation="fade-up" delay={600}>
+          <ScrollReveal animation="fade-up" delay={500}>
             <div className="mt-6 flex flex-wrap items-center gap-2">
               <Sticker variant="pink">100% Online</Sticker>
               <Sticker variant="yellow">Desde $10.000 / hr</Sticker>
