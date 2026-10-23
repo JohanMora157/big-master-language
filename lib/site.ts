@@ -1,7 +1,7 @@
 export const SITE = {
   name: 'Big Master Language Center',
-  phoneDisplay: '315 2430707',
-  phoneIntl: '573152430707',
+  phoneDisplay: '+57 318 990 8335',
+  phoneIntl: '573189908335',
   email: 'bigmasterlanguagecenter@gmail.com',
   instagram: '@bigmasterlanguagecenter',
   instagramUrl: 'https://instagram.com/bigmasterlanguagecenter',

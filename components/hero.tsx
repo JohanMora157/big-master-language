@@ -102,7 +102,7 @@ export function Hero() {
               <CtaButton
                 size="lg"
                 variant="outline"
-                message="Hola Big Master, quiero conocer los cursos disponibles."
+                href="#cursos"
               >
                 Conocer nuestros cursos
               </CtaButton>
